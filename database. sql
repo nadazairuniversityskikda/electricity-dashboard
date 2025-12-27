@@ -1,0 +1,17 @@
+DROP TABLE IF EXISTS factures;
+CREATE TABLE factures (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    mois VARCHAR(50),
+    consommation_kwh INT,
+    montant_da INT
+);
+
+INSERT INTO factures (mois, consommation_kwh, montant_da) VALUES 
+('Janvier', 150, 2500),
+('Février', 140, 2300),
+('Mars', 130, 2100),
+('Avril', 160, 2700),
+('Mai', 180, 3100),
+('Juin', 220, 3800),
+('Juillet', 300, 5200),
+('Août', 350, 6000);
